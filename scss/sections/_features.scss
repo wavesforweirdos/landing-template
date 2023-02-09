@@ -1,0 +1,40 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.features-section {
+    position: relative;
+
+    .nav {
+        .nav-link {
+            border-bottom: 4px solid $gray-200;
+        }
+
+        .active {
+            border-bottom: 4px solid $secondary;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    .tab-content {
+        margin-top: 5rem;
+
+        .tab--text {
+            padding: 0 0 0 7rem;
+        }
+    }
+
+    .image-box {
+        right: 0;
+
+        img {
+            // position: absolute;
+            width: 100%;
+        }
+
+        .bg-custom {
+            @include bg-custom(right);
+        }
+
+    }
+}

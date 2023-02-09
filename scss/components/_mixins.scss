@@ -1,0 +1,22 @@
+@use '../custom'as *;
+
+@mixin bg-custom($side) {
+    position: absolute;
+    bottom: -10vh;
+    width: 35vw;
+    height: 50vh;
+    background-color: $primary;
+    z-index: -1;
+
+    @if ($side=='left') {
+        right: 0;
+        border-top-left-radius: 15rem;
+        border-bottom-left-radius: 15rem;
+    }
+
+    @if ($side=='right') {
+        left: 0;
+        border-top-right-radius: 15rem;
+        border-bottom-right-radius: 15rem;
+    }
+}

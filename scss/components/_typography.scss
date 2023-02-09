@@ -1,18 +1,33 @@
 @use '../custom'as *;
 
-.display-2 {
-    margin-bottom: 1rem;
-    font-size: small;
-    font-size: 1rem;
-
-    &--intro {
+.display-1 {
+    &--hero {
         display: inline-block;
-        font-weight: 700;
+    }
+    
+    &--description {
+        display: block;
+        margin: 1.2rem 0 2rem;
+    }
+}
+
+
+.display-2 {
+    &--title {
+        display: inline-block;
     }
 
     &--description {
         display: block;
-        font-weight: 400;
         margin: 1.2rem 0 2rem;
+    }
+
+    &--nav-title {
+        display: inline-block;
+    }
+
+    &--nav-description {
+        display: block;
+        margin: 1.5rem 0 2rem;
     }
 }

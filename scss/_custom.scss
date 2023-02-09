@@ -1,16 +1,11 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px
+) ;
 
-:root {
-    --mobile: 375;
-    --Desktop: 1440;
-
-    --Font-size: 18px;
-    --Font-weight4: 400;
-    --Font-weight5: 500;
-  }
-//-------------- THEME TYPOGRAPHY --------------//
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-$font-family-base:'Rubik',sans-serif;
 
 //-------------- THEME COLORS --------------//
 
@@ -25,11 +20,36 @@ $secondary: $soft-red;
 $light: $grayish-blue;
 $dark: $very-dark-blue;
 
+//-------------- THEME TYPOGRAPHY --------------//
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+$font-family-base:'Rubik';
+
+$headings-font-weight: 700;
+$headings-color: black;
+
+$body-color:$light;
+$font-size-base: 1.2rem;
 
 //-------------- ACCORDION OVERRIDES --------------//
 $accordion-icon-color: $primary;
 $accordion-icon-width: 1.5rem;
 $accordion-border-color: $light;
+
+//-------------- TABS OVERRIDES --------------//
+
+$nav-link-padding-y: 1.5rem !default;
+$nav-link-padding-x: 1rem !default;
+$nav-link-font-size: null !default;
+$nav-link-font-weight: 500 !default;
+$nav-link-color: $dark;
+$nav-link-hover-color: $dark;
+$nav-link-border: 1px;
+
+$nav-tabs-border-color:             none;
+$nav-tabs-border-width:             none;
+$nav-tabs-border-radius:            none;
+$nav-tabs-link-active-border-color: $secondary;
 
 //-------------- IMPORT BOOTSTRAP 5 --------------//
 
