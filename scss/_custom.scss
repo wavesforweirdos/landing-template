@@ -1,0 +1,36 @@
+
+:root {
+    --mobile: 375;
+    --Desktop: 1440;
+
+    --Font-size: 18px;
+    --Font-weight4: 400;
+    --Font-weight5: 500;
+  }
+//-------------- THEME TYPOGRAPHY --------------//
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+$font-family-base:'Rubik',sans-serif;
+
+//-------------- THEME COLORS --------------//
+
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+
+$primary: $soft-blue;
+$secondary: $soft-red;
+$light: $grayish-blue;
+$dark: $very-dark-blue;
+
+
+//-------------- ACCORDION OVERRIDES --------------//
+$accordion-icon-color: $primary;
+$accordion-icon-width: 1.5rem;
+$accordion-border-color: $light;
+
+//-------------- IMPORT BOOTSTRAP 5 --------------//
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,16 @@
+@use '../custom'as *;
+
+.menu {
+    ul {
+        padding-right: 1.5rem;
+
+        li {
+            padding: 0 1.5rem;
+
+            a {
+                color: hsl(229, 31%, 21%);
+                font-weight: 500;
+            }
+        }
+    }
+}

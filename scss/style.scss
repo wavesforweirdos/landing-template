@@ -1,0 +1,19 @@
+@use 'custom';
+
+//-------------- import ALL COMPONENTS --------------//
+
+@use 'components/animations';
+@use 'components/button';
+@use 'components/mixins';
+@use 'components/typography';
+
+
+//-------------- import ALL SECCTIONS --------------//
+
+@use 'sections/navbar';
+@use 'sections/login';
+@use 'sections/hero';
+@use 'sections/features';
+@use 'sections/contact';
+@use 'sections/pricing';
+@use 'sections/footer';
