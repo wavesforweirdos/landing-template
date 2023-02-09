@@ -1,0 +1,18 @@
+@use '../custom'as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    font-size: small;
+    font-size: 1rem;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    &--description {
+        display: block;
+        font-weight: 400;
+        margin: 1.2rem 0 2rem;
+    }
+}

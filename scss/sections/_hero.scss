@@ -1,0 +1,34 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.intro-section {
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intros--btn {
+    display: flex;
+    gap: 1.5em;
+}
+
+.image-box img {
+    object-fit: cover;
+}
+
+.bg-custom {
+    position: relative;
+}
+
+.image-box::before {
+    position: absolute;
+    content: '';
+    top:40%;
+    right:0;
+    width: 30vw; 
+    height: 40vh;
+    border-top-left-radius: 15rem;
+    border-bottom-left-radius: 15rem;
+    background-color: $primary;
+    z-index: -1;
+}
