@@ -1,4 +1,5 @@
 @use '../custom'as *;
+@use '../components/button'as *;
 
 .menu {
     ul {
@@ -10,7 +11,29 @@
             a {
                 color: hsl(229, 31%, 21%);
                 font-weight: 500;
+
+                &:hover {
+                    color: $secondary;
+                }
             }
         }
+    }
+
+
+}
+
+
+.btn-rounded {
+
+    &--primary {
+        @include btn-rounded($primary);
+    }
+
+    &--secondary {
+        @include btn-rounded($secondary);
+    }
+
+    &--light {
+        @include btn-rounded(rgba(128, 128, 128, 0.2));
     }
 }

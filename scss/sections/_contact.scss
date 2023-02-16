@@ -1,0 +1,42 @@
+@use '../custom'as *;
+@use '../components/validation'as *;
+@use '../components/button'as *;
+
+
+.contact-section {
+    margin: 10rem 0 0;
+    padding: 5rem 0;
+    background-color: $primary;
+    color: white;
+    letter-spacing: 1px;
+
+    p {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    .flex-column {
+        display: flex;
+        gap: 1rem;
+    }
+
+    form {
+        margin: 1rem 0;
+        input {
+            padding: 1rem 2rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 15rem 0;
+    }
+}
+
+
+.btn-rounded {
+
+    &--secondary {
+        @include btn-rounded($secondary);
+    }
+
+}

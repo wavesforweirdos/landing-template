@@ -1,10 +1,8 @@
-$container-max-widths: (
-  sm: 540px,
+$container-max-widths: (sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1400px
-) ;
+  xxl: 1400px);
 
 
 //-------------- THEME COLORS --------------//
@@ -20,6 +18,8 @@ $secondary: $soft-red;
 $light: $grayish-blue;
 $dark: $very-dark-blue;
 
+$box-shadow: .1rem .5rem 1.5rem rgba($light, .50);
+
 //-------------- THEME TYPOGRAPHY --------------//
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
@@ -31,25 +31,43 @@ $headings-color: black;
 $body-color:$light;
 $font-size-base: 1.2rem;
 
-//-------------- ACCORDION OVERRIDES --------------//
-$accordion-icon-color: $primary;
-$accordion-icon-width: 1.5rem;
-$accordion-border-color: $light;
 
 //-------------- TABS OVERRIDES --------------//
-
 $nav-link-padding-y: 1.5rem !default;
 $nav-link-padding-x: 1rem !default;
 $nav-link-font-size: null !default;
 $nav-link-font-weight: 500 !default;
 $nav-link-color: $dark;
-$nav-link-hover-color: $dark;
+$nav-link-hover-color: $secondary;
 $nav-link-border: 1px;
 
-$nav-tabs-border-color:             none;
-$nav-tabs-border-width:             none;
-$nav-tabs-border-radius:            none;
+$nav-tabs-border-color: none;
+$nav-tabs-border-width: none;
+$nav-tabs-border-radius: none;
 $nav-tabs-link-active-border-color: $secondary;
+
+//-------------- CARD OVERRIDES --------------//
+$card-border-radius: 5%;
+$card-border-width: none;
+
+
+//-------------- ACCORDION OVERRIDES --------------//
+$accordion-padding-y: 2rem;
+$accordion-padding-x: 0rem;
+$accordion-color: black;
+
+$accordion-border-width: .1rem;
+$accordion-border-color: hsl(0, 0%, 50%, 30%);
+
+$accordion-icon-width: 1.2em;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $primary;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M3.29297 6.70711C3.68349 6.31658 4.31666 6.31658 4.70718 6.70711L12.0001 14L19.293 6.70711C19.6835 6.31658 20.3167 6.31658 20.7072 6.70711L21.4143 7.41421C21.8048 7.80474 21.8048 8.4379 21.4143 8.82843L13.0607 17.182C12.4749 17.7678 11.5252 17.7678 10.9394 17.182L2.58586 8.82843C2.19534 8.4379 2.19534 7.80474 2.58586 7.41422L3.29297 6.70711Z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M3.29297 6.70711C3.68349 6.31658 4.31666 6.31658 4.70718 6.70711L12.0001 14L19.293 6.70711C19.6835 6.31658 20.3167 6.31658 20.7072 6.70711L21.4143 7.41421C21.8048 7.80474 21.8048 8.4379 21.4143 8.82843L13.0607 17.182C12.4749 17.7678 11.5252 17.7678 10.9394 17.182L2.58586 8.82843C2.19534 8.4379 2.19534 7.80474 2.58586 7.41422L3.29297 6.70711Z'/></svg>");
+
+$accordion-button-focus-border-color: 1px;
+$accordion-button-focus-box-shadow: inset 0 0 $primary;
 
 //-------------- IMPORT BOOTSTRAP 5 --------------//
 

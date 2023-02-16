@@ -4,7 +4,7 @@
     &--hero {
         display: inline-block;
     }
-    
+
     &--description {
         display: block;
         margin: 1.2rem 0 2rem;
@@ -19,7 +19,34 @@
 
     &--description {
         display: block;
-        margin: 1.2rem 0 2rem;
+        margin: 1.5rem 1rem 2rem;
+    }
+
+    &--nav-title {
+        display: inline-block;
+    }
+
+    &--nav-description {
+        display: block;
+        margin: 1.5rem 0 2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        &--description {
+            display: block;
+            margin: 1.5rem 0 2rem;
+        }
+    }
+}
+
+.display-3 {
+    &--title {
+        display: inline-block;
+    }
+
+    &--description {
+        display: block;
+        margin: 1.5rem 0 2rem;
     }
 
     &--nav-title {

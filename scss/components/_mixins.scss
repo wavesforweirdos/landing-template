@@ -1,10 +1,10 @@
 @use '../custom'as *;
 
-@mixin bg-custom($side) {
+@mixin bg-custom($side, $top) {
     position: absolute;
-    bottom: -10vh;
-    width: 35vw;
-    height: 50vh;
+    top: $top;
+    width: 85vw;
+    height: 25vh;
     background-color: $primary;
     z-index: -1;
 
@@ -18,5 +18,12 @@
         left: 0;
         border-top-right-radius: 15rem;
         border-bottom-right-radius: 15rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        top: auto;
+        bottom: -10vh;
+        width: 35vw;
+        height: 50vh;
     }
 }

@@ -6,21 +6,37 @@
 
     .nav {
         .nav-link {
-            border-bottom: 4px solid $gray-200;
+            border-bottom: 2px solid $gray-400;
+            position: relative;
         }
 
         .active {
-            border-bottom: 4px solid $secondary;
+            border-bottom: 2px solid $secondary;
         }
 
         margin-bottom: 2rem;
+
+        @include media-breakpoint-up(md) {
+            .nav-link {
+                border-bottom: 4px solid $gray-200;
+            }
+
+            .active {
+                border-bottom: 4px solid $secondary;
+            }
+        }
     }
 
     .tab-content {
         margin-top: 5rem;
 
         .tab--text {
-            padding: 0 0 0 7rem;
+            padding: 8rem 2rem;
+        }
+        @include media-breakpoint-up(md) {
+            .tab--text {
+                padding: 0 0 0 7rem;
+            }
         }
     }
 
@@ -28,12 +44,11 @@
         right: 0;
 
         img {
-            // position: absolute;
             width: 100%;
         }
 
         .bg-custom {
-            @include bg-custom(right);
+            @include bg-custom(right, 80vh);
         }
 
     }

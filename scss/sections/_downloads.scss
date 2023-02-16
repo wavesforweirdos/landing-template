@@ -1,0 +1,72 @@
+@use '../custom'as *;
+@use '../components/button'as *;
+
+.downloads-section {
+    margin: 2rem 0 10rem;
+
+    @include media-breakpoint-up(md) {
+        margin: 15rem 0;
+    }
+
+    .row {
+        gap: 2rem;
+
+        .card {
+            position: relative;
+            padding: 0;
+            width: 100%;
+
+            &-body {
+                z-index: 1;
+                padding: 2rem;
+            }
+
+            &-image {
+                margin: 2rem;
+                width: 45%;
+            }
+
+            &-title {
+                font-size: 1.5rem;
+            }
+
+            &-text {
+                margin-bottom: 2.5rem;
+                font-size: medium;
+            }
+
+            .dots {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                z-index: -1;
+            }
+
+            &-btn {
+                width: 100%;
+                margin-top: 2rem;
+                padding: .6rem .6rem;
+                // font-size: medium;
+            }
+        }
+
+        .card {
+            height: min-content;
+        }
+
+        @include media-breakpoint-up(md) {
+
+            .card:nth-of-type(3) {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    .btn-rounded {
+
+        &--primary {
+            @include btn-rounded($primary);
+        }
+
+    }
+}

@@ -1,0 +1,61 @@
+@use '../custom'as *;
+
+.footer {
+    background-color: $dark;
+    padding: 60px 50px;
+
+    text-transform: uppercase;
+    font-size: medium;
+
+
+    &--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 3rem;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &--nav {
+        gap: 3rem;
+    }
+
+    &--links {
+        opacity: $light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin: 0;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+
+        li {
+            list-style: none;
+        }
+
+    }
+
+    &--socials {
+        display: flex;
+        gap: 3rem;
+        margin: 0;
+
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}

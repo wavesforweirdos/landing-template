@@ -1,0 +1,43 @@
+@use '../custom'as *;
+
+.faqs-section {
+    .accordion {
+        margin: 2rem 0 4rem;
+        border-width: 1px;
+
+        font-weight: 700;
+
+        .accordion-body {
+            padding: 2rem 1rem;
+            font-size: medium;
+            color: $light;
+            font-weight: 300;
+        }
+
+        .accordion-item:first-child {
+            border-top: 1.5em;
+        }
+
+        button:hover{
+            color: $secondary;
+        }
+
+        .accordion-header>button{
+            font-size: medium;
+            @include media-breakpoint-up(md) {
+                font-size: x-large;
+            }
+        }
+    }
+}
+
+.accordion-item {
+
+    &:first-of-type {
+        border-top: .1rem solid hsl(0, 0%, 50%, 30%) !important;
+    }
+    
+    &:last-of-type {
+        border-bottom: .1rem solid hsl(0, 0%, 50%, 30%) !important;
+    }
+}

@@ -2,7 +2,6 @@
 
 //-------------- import ALL COMPONENTS --------------//
 
-@use 'components/animations';
 @use 'components/button';
 @use 'components/mixins';
 @use 'components/typography';
@@ -14,6 +13,8 @@
 @use 'sections/login';
 @use 'sections/hero';
 @use 'sections/features';
+@use 'sections/downloads';
+@use 'sections/faqs';
 @use 'sections/contact';
 @use 'sections/pricing';
 @use 'sections/footer';
